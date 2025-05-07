@@ -16,3 +16,17 @@ cadena = "Hola Mundo"# Debe retornar 4 (o, a, u, o)
 def contar_vocal(cadena):
     return sum(1 for letra in cadena if letra.lower() in "aeiou")
 print(contar_vocal(cadena))
+
+#* Ejercicio 3: Encontrar el número más grande en una lista
+#*Descripción: Implementa una función que encuentre el número más 
+#* grande en una lista (sin usar max()).
+maximo =[3, 8, 12, 10, 5]  # Debe retornar 10
+def encontrar_maximo(lista):
+    maximo = lista[0]
+    for num in lista:
+        if num > maximo:
+            maximo = num
+    return maximo
+resultado = encontrar_maximo(maximo)
+print(f"el maximo numero es: {resultado}")   
+
