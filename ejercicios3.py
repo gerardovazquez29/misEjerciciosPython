@@ -44,7 +44,8 @@ print(invertida)
 
 
 #* jercicio 5: Verificar palíndromo
-#* Descripción: Una palabra es palíndromo si se lee igual al derecho y al revés (ej: "reconocer"). 
+#* Descripción: Una palabra es palíndromo si se lee igual al derecho y al revés
+#*  (ej: "reconocer"). 
 #* Haz una función que devuelva True si es palíndromo.
 
 es_palindromo = "Anita lava la tina"
@@ -64,4 +65,18 @@ if palindromo(texto):
 else:
     print(f" {texto} no es un palindromo")
     
+
+#*Ejercicio 6: Factorial de un número
+#*Descripción: Escribe una función recursiva o iterativa que calcule el factorial de 
+#* un número entero positivo.
+#*factorial(5)  # Debe retornar 120 (5 * 4 * 3 * 2 * 1)
+def factorial(n):
+    if n < 0:
+        return None
+    resultado = 1
+    for i in range(1,n + 1):
+        resultado *= i
+    return resultado
+print(factorial(5))
+
 
