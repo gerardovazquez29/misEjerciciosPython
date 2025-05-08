@@ -30,3 +30,38 @@ def encontrar_maximo(lista):
 resultado = encontrar_maximo(maximo)
 print(f"el maximo numero es: {resultado}")   
 
+#*Ejercicio 4: Invertir una cadena
+#*Descripción: Escribe una función que invierta una cadena (sin usar [::-1] o reversed).
+cadena = "Hola mundo"
+invertido = ""
+for caracter in cadena:
+    invertido = caracter + invertido
+print(invertido)
+
+invertida = cadena[::-1]
+print(invertida)
+
+
+
+#* jercicio 5: Verificar palíndromo
+#* Descripción: Una palabra es palíndromo si se lee igual al derecho y al revés (ej: "reconocer"). 
+#* Haz una función que devuelva True si es palíndromo.
+
+es_palindromo = "Anita lava la tina"
+if es_palindromo.lower().replace(" ","") == es_palindromo.lower().replace(" ", "")[::-1]:
+    print(f"{es_palindromo} Es un palindromo valido!")
+else:
+    print(f"{es_palindromo} No es un palindromo valido!")  
+
+
+def palindromo(palabra):
+    palabra = palabra.lower().replace(" ","")
+    return palabra == palabra[::-1]
+
+texto = input("Ingresa una palabra o frase: ")
+if palindromo(texto):
+    print(f" {texto} es un palindromo")
+else:
+    print(f" {texto} no es un palindromo")
+    
+
